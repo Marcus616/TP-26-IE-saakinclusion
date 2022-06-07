@@ -1,4 +1,10 @@
 <?php
+
+//Begin Really Simple SSL session cookie settings
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+//END Really Simple SSL
 /**
  * The base configuration for WordPress
  *
@@ -83,8 +89,8 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_HOME', 'http://3.105.54.76' );
-define( 'WP_SITEURL', 'http://3.105.54.76' );
+define( 'WP_HOME', 'https://saakinclusion.ml/' );
+define( 'WP_SITEURL', 'https://saakinclusion.ml/' );
 
 /* That's all, stop editing! Happy publishing. */
 
